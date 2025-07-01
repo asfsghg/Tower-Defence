@@ -2104,6 +2104,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   TurretPrefab: {fileID: 1738377817}
+  _bulletSpeed: 30
+  _bulletfrequency: 2
 --- !u!4 &1738377817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4026683265520269817, guid: eeafb6aaef7224943875ba93c108da2d,
