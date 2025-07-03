@@ -1,18 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Monster : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private Transform[] targetPoints;
+    
+    private NavMeshAgent agent;
+    
+    private int currentIndex = 0;
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         
+        agent.SetDestination(targetPoints[0].position);
     }
+    
 
-    // Update is called once per frame
+    private void Movement()
+    {
+        if (agent.remainingDistance < 0.01f)
+        {
+            currentIndex++;
+            if (currentIndex >= targetPoints.Length)
+            {
+                currentIndex = 0;
+            }
+            agent.destination = targetPoints[currentIndex].position;
+        }
+    }
     void Update()
     {
-        
+        Movement();
     }
 }
