@@ -3,11 +3,13 @@ using UnityEngine.AI;
 
 public class Monster : MonoBehaviour
 {
-    [SerializeField] private Transform[] targetPoints;
-    
+    [SerializeField] private int _health = 100;
+    [SerializeField] private int _Speed = 4;
     private NavMeshAgent agent;
+    private Transform targetTurret;
     
     private int currentIndex = 0;
+    
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -15,7 +17,7 @@ public class Monster : MonoBehaviour
         agent.SetDestination(targetPoints[0].position);
     }
     
-
+ [SerializeField] private Transform[] targetPoints;
     private void Movement()
     {
         if (agent.remainingDistance < 0.01f)
@@ -30,6 +32,7 @@ public class Monster : MonoBehaviour
     }
     void Update()
     {
-        Movement();
+            Movement();
+            
     }
 }
