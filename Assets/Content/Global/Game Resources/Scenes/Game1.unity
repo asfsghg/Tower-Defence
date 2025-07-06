@@ -30499,6 +30499,7 @@ MonoBehaviour:
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!1 &4554198164225603335 stripped
 GameObject:
@@ -30513,6 +30514,9 @@ Transform:
   m_PrefabInstance: {fileID: 5224680303736494793}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5224680303736494793
+=======
+--- !u!1001 &770800782964868025
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -30520,6 +30524,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 1564598534083507089, guid: 22101f13e8b8eee499bc0e9be889aec0,
         type: 3}
       propertyPath: TurretPrefab
@@ -30537,10 +30542,14 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1774647591848541977, guid: 22101f13e8b8eee499bc0e9be889aec0,
+=======
+    - target: {fileID: 811350647907458587, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_Name
       value: 'Turret lvl3 '
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1891185087558406961, guid: 22101f13e8b8eee499bc0e9be889aec0,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -30552,10 +30561,19 @@ PrefabInstance:
       value: -50.581654
       objectReference: {fileID: 0}
     - target: {fileID: 6322244191117586548, guid: 22101f13e8b8eee499bc0e9be889aec0,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.728134
+      objectReference: {fileID: 0}
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 173
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 6322244191117586548, guid: 22101f13e8b8eee499bc0e9be889aec0,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -30651,40 +30669,73 @@ PrefabInstance:
       value: -59.699715
       objectReference: {fileID: 0}
     - target: {fileID: 3701673875325341379, guid: 25362e438a628c540b34c83c49c025da,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -57.275997
+      objectReference: {fileID: 0}
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3701673875325341379, guid: 25362e438a628c540b34c83c49c025da,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3701673875325341379, guid: 25362e438a628c540b34c83c49c025da,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3701673875325341379, guid: 25362e438a628c540b34c83c49c025da,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3701673875325341379, guid: 25362e438a628c540b34c83c49c025da,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3701673875325341379, guid: 25362e438a628c540b34c83c49c025da,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3701673875325341379, guid: 25362e438a628c540b34c83c49c025da,
+=======
+    - target: {fileID: 944902732247779606, guid: 0c1f4f7caceefb543b653ded08da0d26,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 6132075545677418415, guid: 25362e438a628c540b34c83c49c025da,
         type: 3}
       propertyPath: TurretPrefab
@@ -30716,12 +30767,19 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.5
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 25362e438a628c540b34c83c49c025da, type: 3}
 --- !u!1001 &5759076208499386012
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 0c1f4f7caceefb543b653ded08da0d26, type: 3}
+--- !u!1001 &995606860746660757
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -30729,16 +30787,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 457111850149518968, guid: 6fbb562d3bec9a5458cacb474f846a90,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.484
       objectReference: {fileID: 0}
     - target: {fileID: 2324685491636815342, guid: 6fbb562d3bec9a5458cacb474f846a90,
+=======
+    - target: {fileID: 216568135141987379, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_Name
       value: Turret lvl1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 5288985813659623280, guid: 6fbb562d3bec9a5458cacb474f846a90,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -30775,10 +30838,19 @@ PrefabInstance:
       value: -81.52
       objectReference: {fileID: 0}
     - target: {fileID: 7101986856611409696, guid: 6fbb562d3bec9a5458cacb474f846a90,
+=======
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59.588043
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 173
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 7101986856611409696, guid: 6fbb562d3bec9a5458cacb474f846a90,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -30805,20 +30877,58 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7101986856611409696, guid: 6fbb562d3bec9a5458cacb474f846a90,
+=======
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 7101986856611409696, guid: 6fbb562d3bec9a5458cacb474f846a90,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -248.83899
       objectReference: {fileID: 0}
     - target: {fileID: 7101986856611409696, guid: 6fbb562d3bec9a5458cacb474f846a90,
+=======
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315336950959179733, guid: 1a1f0d02f256cb6468e8cb24e06ea984,
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 7897522186593625762, guid: 6fbb562d3bec9a5458cacb474f846a90,
         type: 3}
       propertyPath: Radius
@@ -30850,10 +30960,13 @@ PrefabInstance:
       propertyPath: EnemyLayer.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 6fbb562d3bec9a5458cacb474f846a90, type: 3}
 --- !u!114 &6195946015320345936
 MonoBehaviour:
@@ -30884,6 +30997,77 @@ Transform:
   m_PrefabInstance: {fileID: 5651503337704425558}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> a2e292e66004987db2a9f572150e5e8108d75a39
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 1a1f0d02f256cb6468e8cb24e06ea984, type: 3}
+--- !u!1001 &8384389660163560698
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -54.920002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 173
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -59.699715
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2863135125203042355, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114433688974233202, guid: 9ed508634d716fe4993b540fa35ad552,
+        type: 3}
+      propertyPath: m_Name
+      value: Turret lvl2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ed508634d716fe4993b540fa35ad552, type: 3}
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -30893,9 +31077,15 @@ SceneRoots:
   - {fileID: 291954590}
   - {fileID: 1177156523}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   - {fileID: 5759076208499386012}
   - {fileID: 5651503337704425558}
   - {fileID: 5224680303736494793}
   - {fileID: 655041051}
 >>>>>>> a2e292e66004987db2a9f572150e5e8108d75a39
+=======
+  - {fileID: 995606860746660757}
+  - {fileID: 8384389660163560698}
+  - {fileID: 770800782964868025}
+>>>>>>> parent of cb087ca (Farm+ElectroTawer)
