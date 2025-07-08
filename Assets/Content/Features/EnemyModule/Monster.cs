@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class Monster : MonoBehaviour
 {
-
+    [SerializeField] public int _health = 100;
     [SerializeField] private int _Speed = 4;
     private NavMeshAgent agent;
     private Transform targetTurret;

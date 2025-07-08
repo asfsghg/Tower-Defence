@@ -4,23 +4,37 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private int damage = 10;
-    [SerializeField] private float _destroyTime = 1f;
+    [SerializeField] public int _damage = 10;
+    private GameObject target;
+    private float _destroyTime = 1f;
 
-    void Start()
-    {
-        Destroy(gameObject, _destroyTime);
-    }
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.TryGetComponent(out EnemyHealth enemy))
+        if (other.TryGetComponent<Monster>(out var player))
         {
-            enemy.TakeDamage(damage);
+            player._health -= _damage;
             Destroy(gameObject);
+            Debug.Log(player._health);
+            if (player._health <= 0)
+            {
+                Destroy(player.gameObject);
+            }
 
         }
     }
-    
+
+    void Update()
+    {
+        if (_destroyTime <= 0)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            _destroyTime -= Time.deltaTime;
+            Debug.Log(_destroyTime);
+        }
+    }
 }
 
