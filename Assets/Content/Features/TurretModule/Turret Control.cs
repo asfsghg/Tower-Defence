@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class TurretControl : MonoBehaviour
 {
-    [SerializeField] public int Damage = 10;
     [SerializeField] Transform bulletPrefab; //префаб кулі
     [SerializeField] private float rayDistance = 15; // дистанція кулі
     [SerializeField] private float Radius = 10f; // радіус зони попадання куль
