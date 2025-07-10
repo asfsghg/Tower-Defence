@@ -8,7 +8,6 @@ public class BuildingPlacer : MonoBehaviour
     public GameObject buildingPrefab; // префаб турелі
     private GameObject buildingInstance; // посилання на створений префаб
     public Vector3 mouseWorldPosition; // позиція миші
-    private float time = 2f; //затримка між спавном
 
     void Update()
     {
