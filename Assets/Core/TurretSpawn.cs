@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -6,7 +7,6 @@ public class BuildingPlacer : MonoBehaviour
    public GameObject buildingPrefab; //префаб турелі
    private GameObject buildingInstance; // позиція турелі через рейкаст
    public Vector3 mouseWorldPosition; // миша
-   private bool _wasBuildingPlaced;
 
    void Update()
    {
@@ -19,12 +19,14 @@ public class BuildingPlacer : MonoBehaviour
             if (hit.collider.tag == "Building")
             {
                mouseWorldPosition = hit.point;
-               Instantiate(buildingPrefab.gameObject, mouseWorldPosition, Quaternion.identity);
+               buildingInstance = Instantiate(buildingPrefab.gameObject, mouseWorldPosition, Quaternion.identity);
+               buildingInstance.transform.parent = transform;
+               hit.collider.tag = "Untagged";
                
-
             }
          }
       }
       
    }
+   
 }
