@@ -40,6 +40,7 @@ public class TurretControl : MonoBehaviour
                 shootTimer = 0f;
             }
         }
+        
     }
 
     private void DetectPlayer() //знаходження ворога
@@ -65,6 +66,7 @@ public class TurretControl : MonoBehaviour
         {
             rb.velocity = direction.normalized * _bulletSpeed;
         }
+        
     }
 
     private void OnDrawGizmosSelected() //радіус знаходження ворога
@@ -72,4 +74,6 @@ public class TurretControl : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, Radius);
     }
+
+    
 }

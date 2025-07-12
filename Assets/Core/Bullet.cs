@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private int _damage = 10;
+    [SerializeField] private float _destroyTime = 1f;
+    [SerializeField] private ParticleSystem _explodeParticles;
+
     void Start()
     {
-        
+        _explodeParticles.Play();
+        Destroy(gameObject, _destroyTime);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.TryGetComponent(out EnemyHealth enemy))
+        {
+           enemy.TakeDamage(_damage);
+           Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
+
