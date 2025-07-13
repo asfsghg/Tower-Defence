@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Music : MonoBehaviour
 {
-    //public void ToggleMusic()
-    //{
-    //    if (musicSource.isPlaying)
-    //    {
-    //        musicSource.Stop();
-    //    }
-    //    else
-    //    {
-    //        musicSource.Play();
-    //    }
+    [SerializeField] private AudioSource audioSource;
+    
 
-    //}    
+    public void ToggleMusic()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+        else
+        {
+            audioSource.Play();
+        }
+
+    }    
 }
