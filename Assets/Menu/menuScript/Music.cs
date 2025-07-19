@@ -1,22 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using Unity.VisualScripting;
 using UnityEngine;
-
-public class Music : MonoBehaviour
+using UnityEngine.UI;
+public class AudioController : MonoBehaviour
 {
-    [SerializeField] private AudioSource audioSource;
-    
+    public  AudioSource audio;
+    public AudioClip clip;
+    public Sprite audioOn;
+    public Sprite audioOff;
+    public Sprite buttonAudio;
+    public Image buttonImage; 
 
-    public void ToggleMusic()
+
+
+    public Slider slider;
+
+
+    void Start()
     {
-        if (audioSource.isPlaying)
+        
+    }
+    void Update()
+    {
+        audio.volume = slider.value; 
+    }
+
+    public void OnffAudio()
+    {
+        if (AudioListener.volume == 1)
         {
-            audioSource.Stop();
+            AudioListener.volume = 0;
+            buttonAudio.GetComponent<Image>().sprite = audioOff;
         }
         else
         {
-            audioSource.Play();
+            AudioListener.volume = 1;
+            buttonAudio.GetComponent<Image>().sprite = audioOn;
         }
+    }
 
-    }    
+    public void PlaySound()
+    {
+        audio.PlayOneShot(clip);
+    }
+
 }
+
+
+
+
+
+
+
+
