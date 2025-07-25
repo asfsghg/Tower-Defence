@@ -9,8 +9,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] private ParticleSystem _explodeParticles;
 
     void Start()
-    {
-        _explodeParticles.Play();
+    { 
+
         Destroy(gameObject, _destroyTime);
     }
     private void OnTriggerEnter(Collider other)
