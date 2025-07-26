@@ -3,37 +3,41 @@ using UnityEngine.AI;
 
 public class Monster : MonoBehaviour
 {
-
     [SerializeField] private int _Speed = 4;
+    [SerializeField] private Transform[] targetPoints;
+
     private NavMeshAgent agent;
-    private Transform targetTurret;
-    
     private int currentIndex = 0;
-    
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        
-        agent.SetDestination(targetPoints[0].position);
+        agent.speed = _Speed;
+
+        if (targetPoints.Length > 0)
+            agent.SetDestination(targetPoints[0].position);
     }
-    
- [SerializeField] private Transform[] targetPoints;
-    private void Movement()
-    {
-        if (agent.remainingDistance < 0.01f)
-        {
-            currentIndex++;
-            if (currentIndex >= targetPoints.Length)
-            {
-                currentIndex = 0;
-            }
-            agent.destination = targetPoints[currentIndex].position;
-        }
-    }
+
     void Update()
     {
-            Movement();
-            agent.speed = _Speed;
-            
+        Movement();
+    }
+
+    private void Movement()
+    {
+        if (!agent.pathPending && agent.remainingDistance < 0.1f)
+        {
+            if (currentIndex >= targetPoints.Length - 1)
+            {
+                Destroy(gameObject);
+                FindObjectOfType<Maintower>()._health -= 10;
+            }
+            else
+            {
+                currentIndex++;
+                agent.SetDestination(targetPoints[currentIndex].position);
+            }
+        }
     }
 }
+
