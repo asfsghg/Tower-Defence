@@ -11,13 +11,14 @@ public class BuildingPlacer : MonoBehaviour
 
     void Update()
     {
+       
         if (Input.GetMouseButtonDown(0))
         {
             Build();
         }
     }
 
-    private void Build()
+    public void Build()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
@@ -27,7 +28,9 @@ public class BuildingPlacer : MonoBehaviour
             if (hit.collider.CompareTag("Building"))
             {
                 mouseWorldPosition = hit.point;
+                mouseWorldPosition.y = 2.36f;
                 buildingInstance = Instantiate(buildingPrefab, mouseWorldPosition, Quaternion.identity);
+
                 hit.collider.tag = "Untagged";
             }
         }

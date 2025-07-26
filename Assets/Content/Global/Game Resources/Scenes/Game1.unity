@@ -20238,7 +20238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be93d3e5986d37442b676d24a7e3ccc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingPrefab: {fileID: 8569069022242619800}
+  buildingPrefab: {fileID: 4761541257663612543, guid: c98097584e701ae4290b3b9d3e77cdf1,
+    type: 3}
   mouseWorldPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1405472168
 MonoBehaviour:
@@ -20253,6 +20254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 5
+  minY: 10
+  maxY: 80
 --- !u!1 &1406742475
 GameObject:
   m_ObjectHideFlags: 0
@@ -34207,12 +34210,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98097584e701ae4290b3b9d3e77cdf1, type: 3}
---- !u!1 &8569069022242619800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6111435175498969317, guid: 5af13cc0274bfc24084c9e0e8b9164bd,
-    type: 3}
-  m_PrefabInstance: {fileID: 8766247674560769050}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8766247674560769050
 PrefabInstance:
   m_ObjectHideFlags: 0

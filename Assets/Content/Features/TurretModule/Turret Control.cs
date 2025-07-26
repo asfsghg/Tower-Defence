@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.UI;
+using TMPro;
 public class TurretControl : MonoBehaviour
 {
+    
+    
     [SerializeField] Transform bulletPrefab; //префаб кулі
+    
     [SerializeField] private float rayDistance = 15; // дистанція кулі
     [SerializeField] private float Radius = 10f; // радіус зони попадання куль
     private NavMeshAgent agent;
@@ -52,6 +56,7 @@ public class TurretControl : MonoBehaviour
         {
             if (collider.TryGetComponent<Monster>(out var player))
             {
+                
                 targetEnemy = player.transform;
                 break;
             }
