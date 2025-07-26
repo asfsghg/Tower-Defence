@@ -146,14 +146,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Speed: 4
   targetPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 470211762003330665, guid: 58883ae3679ceb849b996113382617be, type: 3}
+  - {fileID: 6917459876424987886, guid: b0a0b5c093e95d8438ddf63dc06cf349, type: 3}
+  - {fileID: 6334856739706983729, guid: df5b451954e74d0469ac40a7c65c0c8c, type: 3}
+  - {fileID: 1049273754376208614, guid: 74e42bf6bc0ef124eb8941acdf50e6ce, type: 3}
+  - {fileID: 4687960075071350585, guid: 0bf66f115b2ad0a489883c943d258aaf, type: 3}
+  - {fileID: 691489719468585055, guid: ef35615d97969c74ea83e4e27e5bef92, type: 3}
+  - {fileID: 6897292126475357914, guid: 193d78b9e58b54b43b4a35433a80058a, type: 3}
+  - {fileID: 5291060855400525377, guid: c572be9bbfe4890498596baf2846825c, type: 3}
 --- !u!114 &5695097523228072582
 MonoBehaviour:
   m_ObjectHideFlags: 0

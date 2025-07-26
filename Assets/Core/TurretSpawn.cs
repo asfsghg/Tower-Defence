@@ -18,7 +18,7 @@ public class BuildingPlacer : MonoBehaviour
         }
     }
 
-    private void Build()
+    public void Build()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);

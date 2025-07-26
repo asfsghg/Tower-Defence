@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 20
   _destroyTime: 1
-  _explodeParticles: {fileID: 0}
+  moneyAdd: 50
 --- !u!54 &507720142319618986
 Rigidbody:
   m_ObjectHideFlags: 0
