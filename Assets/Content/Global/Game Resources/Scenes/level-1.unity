@@ -20987,6 +20987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc2b227cd175a4ea8ee6236a98c779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _MoneySpendTurret: {fileID: 0}
   Price: 0
 --- !u!4 &1371929916
 Transform:
