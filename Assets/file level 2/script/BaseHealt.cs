@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class BaseHealt : MonoBehaviour
 {
-    public int baseHealth = 1000;
+    public int baseHealth = 1;
     public Slider healthSlider;
     private void Start()
     {
@@ -21,6 +21,7 @@ public class BaseHealt : MonoBehaviour
 
         if (baseHealth <= 0)
         {
+            Destroy(gameObject);
         }
     }
 }

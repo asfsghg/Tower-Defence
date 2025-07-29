@@ -6,6 +6,7 @@ public class DamageBase : MonoBehaviour
 {
 
     private Enemy enemy;
+    public string targetTagd = "Base";
 
     private void Start()
     {
@@ -14,6 +15,10 @@ public class DamageBase : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag(targetTagd))
+        {
+            Destroy(gameObject);
+        }
         if (other.CompareTag("Base"))
         {
             BaseHealt baseHealth = other.GetComponent<BaseHealt>();
@@ -22,10 +27,15 @@ public class DamageBase : MonoBehaviour
                 baseHealth.TakeDamage(enemy.health);
             }
 
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
+
     }
-}
+}   
+
+
+
+
 
 
 
