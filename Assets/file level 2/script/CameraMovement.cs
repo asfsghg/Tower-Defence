@@ -15,13 +15,13 @@ public class CameraMovement : MonoBehaviour
         Vector3 pos = transform.position;
 
        
-        if (Input.GetKey("s") || Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
             pos.z += moveSpeed * Time.deltaTime;
-        if (Input.GetKey("w") || Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow))
             pos.z -= moveSpeed * Time.deltaTime;
-        if (Input.GetKey("a") || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
             pos.x += moveSpeed * Time.deltaTime;
-        if (Input.GetKey("d") || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
             pos.x -= moveSpeed * Time.deltaTime;
 
        
