@@ -10,6 +10,8 @@ using TMPro;
 
 public class ShopController : MonoBehaviour
 {
+    private int _selectedTurretIndex;
+
     private GameObject _currentTurret;
     private MoneyController _moneyController;
     private bool _IsBuilding;
@@ -26,15 +28,21 @@ public class ShopController : MonoBehaviour
         {
             _moneyController.moneyAmount -= _ShopTurrets[index].price;
             _currentTurret = _ShopTurrets[index].turret;
+            _selectedTurretIndex = index;
+            _IsBuilding = true;
+
         }
     }
 
+
+
     void Update()
     {
-        
+
         if (Input.GetMouseButtonDown(0))
         {
-               
+            FarmSpawn();
+
             SpawnBuilding();
         }
     }
@@ -42,29 +50,67 @@ public class ShopController : MonoBehaviour
 
     public void SpawnBuilding()
     {
-        if (_IsBuilding == true)
+        if (_selectedTurretIndex != 4)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
-
-            if (Physics.Raycast(ray, out RaycastHit hit))
+            if (_IsBuilding && _currentTurret != null)
             {
-                if (hit.collider.TryGetComponent(out BuildingPlacer buildingPlacer) && buildingPlacer.IsBuilding == false)
+
+
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out RaycastHit hit))
                 {
-                    if (_currentTurret != null)
+                    if (hit.collider.tag == "Building")
                     {
                         Vector3 spawnPosition = hit.point;
-                        spawnPosition.y = 2.36f; 
+                        spawnPosition.y = 2.36f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
-                        
                         _currentTurret = null;
+                        _IsBuilding = false;
+                        hit.collider.tag = "Untagged";
                     }
+
+
+
                 }
+
             }
         }
     }
 
+    public void FarmSpawn()
+    {
+        if (_selectedTurretIndex == 4)
+        {
+            if (_IsBuilding && _currentTurret != null)
+            {
+                
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out RaycastHit hit))
+                {
+                    if (hit.collider.tag == "Farm")
+                    {
+                        Vector3 spawnPosition = hit.point;
+                        spawnPosition.y = 2.36f;
+                        Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
+                        _currentTurret = null;
+                        _IsBuilding = false;
+                        hit.collider.tag = "Untagged";
+                    }
+                    
+                }
+            
+            }
+        }
+        
+    }
+
 }
+
+
+
+
 
 [System.Serializable]
 public class ShopTurret
