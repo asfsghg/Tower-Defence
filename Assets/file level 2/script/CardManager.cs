@@ -47,7 +47,6 @@ public class CardManager : MonoBehaviour, IDragHandler,IPointerUpHandler,IPointe
                 if ((x % 2 == 1) || (z % 2 == 1)) _isAvailableToBuild = false;
                 _draggingBuilding.transform.position = new Vector3(x,0, z);
 
-
             }
         }
         //throw new System.NotImplementedException();
@@ -85,7 +84,12 @@ public class CardManager : MonoBehaviour, IDragHandler,IPointerUpHandler,IPointe
         }
        // throw new System.NotImplementedException();
     }
-
+    private bool IsPlaceTaken(int x, int y)
+    {
+        if (_grid[x,y] != null)
+            return true;
+        return false;
+    }
     // Start is called before the first frame update
     void Start()
     {
