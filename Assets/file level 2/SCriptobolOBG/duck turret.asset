@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8442e16e6518bdc43abdf6d590def7d2, type: 3}
   m_Name: duck turret
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  prefab: {fileID: 0}
-  cost: 0
+  icon: {fileID: -1456206552, guid: a5e645d0b2507ac42807ef8e886f7d45, type: 3}
+  prefab: {fileID: 860210130248288661, guid: 6fbb562d3bec9a5458cacb474f846a90, type: 3}
+  cost: 50
