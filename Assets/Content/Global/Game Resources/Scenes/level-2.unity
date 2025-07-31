@@ -312,6 +312,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1735141014}
   m_SourcePrefab: {fileID: 100100000, guid: 537682306e5b96d47905d6c8b7a007f2, type: 3}
+--- !u!1 &787851324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 787851326}
+  m_Layer: 0
+  m_Name: CameraControler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &787851326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787851324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 549.33075, y: -551.2397, z: -684.67413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &861565715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -442,6 +473,7 @@ GameObject:
   - component: {fileID: 894890855}
   - component: {fileID: 894890854}
   - component: {fileID: 894890857}
+  - component: {fileID: 894890858}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -567,6 +599,23 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &894890858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894890853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9776b9e1e3070a44800d2d240370680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+  edgeScrollSize: 10
+  zoomSpeed: 10
+  minY: 10
+  maxY: 100
 --- !u!4 &940710609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775298604753187919, guid: ef1d7f057e07b8448831cc871244e437,
@@ -602,8 +651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1dde96fb5ebef438a226157b36b4e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToPlace: {fileID: 9058553}
-  placeOffset: 0.1
 --- !u!4 &962571036
 Transform:
   m_ObjectHideFlags: 0
@@ -619,6 +666,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1116835500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9065441449626840938, guid: ef1d7f057e07b8448831cc871244e437,
+    type: 3}
+  m_PrefabInstance: {fileID: 1976962988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1116835506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116835500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa23d160be0856140ac29aab541428ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 9058553}
+  spawnPoints: []
 --- !u!1 &1166925440
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,8 +715,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1dde96fb5ebef438a226157b36b4e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToPlace: {fileID: 1735141010}
-  placeOffset: 0.1
 --- !u!4 &1166925442
 Transform:
   m_ObjectHideFlags: 0
@@ -839,12 +904,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ce3f738f2a6b945aac22560b6f6ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 9058553}
-  spawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  initialEnemyCount: 5
-  waveIncrement: 5
 --- !u!4 &1770985764
 Transform:
   m_ObjectHideFlags: 0
@@ -889,10 +948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ce3f738f2a6b945aac22560b6f6ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
-  spawnPoints: []
-  initialEnemyCount: 5
-  waveIncrement: 5
 --- !u!4 &1772705385
 Transform:
   m_ObjectHideFlags: 0
@@ -1911,6 +1966,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1976962993}
+    - targetCorrespondingSourceObject: {fileID: 9065441449626840938, guid: ef1d7f057e07b8448831cc871244e437,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1116835506}
   m_SourcePrefab: {fileID: 100100000, guid: ef1d7f057e07b8448831cc871244e437, type: 3}
 --- !u!1 &1976962989 stripped
 GameObject:
@@ -2012,6 +2071,53 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!1 &2020194149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020194151}
+  - component: {fileID: 2020194150}
+  m_Layer: 0
+  m_Name: SpawnEnemyControler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2020194150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020194149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa23d160be0856140ac29aab541428ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 9058553}
+  spawnPoints:
+  - {fileID: 0}
+--- !u!4 &2020194151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020194149}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 549.33075, y: -551.2397, z: -684.67413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137040421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,3 +2196,5 @@ SceneRoots:
   - {fileID: 1770985764}
   - {fileID: 962571036}
   - {fileID: 1772705385}
+  - {fileID: 787851326}
+  - {fileID: 2020194151}

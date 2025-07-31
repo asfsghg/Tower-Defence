@@ -591,12 +591,6 @@ Transform:
   - {fileID: 1964908043}
   m_Father: {fileID: 291954590}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &38077501 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1937419273818174872, guid: 25362e438a628c540b34c83c49c025da,
-    type: 3}
-  m_PrefabInstance: {fileID: 462261619}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &39900241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,12 +3543,6 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!1 &221282337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3593563509518646950, guid: fb9e63ae840832f4680b004b030ba8f3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2047400820}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &223346125
 GameObject:
   m_ObjectHideFlags: 0
@@ -13076,8 +13064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f5109f54f1ac94c934f85d7e5da640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MoneySpendTurret: {fileID: 38077501}
-  Price: 100
 --- !u!4 &804626286
 Transform:
   m_ObjectHideFlags: 0
@@ -13468,12 +13454,6 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!1 &827836506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 922862850671714479, guid: fac4b2df095c7d941b74808adb969749,
-    type: 3}
-  m_PrefabInstance: {fileID: 842611369}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &836238960
 GameObject:
   m_ObjectHideFlags: 0
@@ -20059,8 +20039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34555a912c6ca794d8a8bf463ec924b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MoneySpendTurret: {fileID: 1750224877}
-  Price: 50
 --- !u!4 &1269622624
 Transform:
   m_ObjectHideFlags: 0
@@ -20622,8 +20600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d79d6d51200244c8a770076276d80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MoneySpendTurret: {fileID: 221282337}
-  Price: 250
 --- !u!4 &1338801307
 Transform:
   m_ObjectHideFlags: 0
@@ -21236,8 +21212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc2b227cd175a4ea8ee6236a98c779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MoneySpendTurret: {fileID: 827836506}
-  Price: 500
+  _ShopTurrets: []
 --- !u!4 &1371929916
 Transform:
   m_ObjectHideFlags: 0
@@ -24033,7 +24008,7 @@ Transform:
   m_GameObject: {fileID: 1577986459}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.06, y: -0.3891, z: 1.03}
+  m_LocalPosition: {x: -1.06, y: -0.35, z: 1.21}
   m_LocalScale: {x: 1, y: 0.28934813, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27343,9 +27318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be93d3e5986d37442b676d24a7e3ccc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingPrefab: {fileID: 827836506}
-  buildingInstance: {fileID: 0}
-  mouseWorldPosition: {x: 0, y: 0, z: 0}
+  IsBuilding: 0
 --- !u!114 &1676381288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28637,12 +28610,6 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: b8acdcf17cce7d94abadc67b1dc529c6, type: 2}
   m_BuildHeightMesh: 0
---- !u!1 &1750224877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 860210130248288661, guid: 6fbb562d3bec9a5458cacb474f846a90,
-    type: 3}
-  m_PrefabInstance: {fileID: 1927163058}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1753295711
 GameObject:
   m_ObjectHideFlags: 0
@@ -29326,8 +29293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101de0cb676a82949ae2cd06793b2c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _MoneySpendTurret: {fileID: 1826281915}
-  Price: 200
 --- !u!4 &1823890173
 Transform:
   m_ObjectHideFlags: 0
@@ -29343,12 +29308,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1826281915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1400316588211816666, guid: 1915927e05d480440bc2ab29c7a75aac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1607105491}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1839356083
 GameObject:
   m_ObjectHideFlags: 0
