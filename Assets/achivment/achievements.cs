@@ -18,8 +18,25 @@ public class achievements : MonoBehaviour
             PlayerPrefs.Save();
 
             achievementButton.GetComponent<Image>().color = Color.green;
-            Debug.Log("Достижение получено: Вход в игру");
+            Invoke(nameof(ChangeColor), 0f);
         }
+    }
+    void ChangeColor()
+    {
+        Color newColor = Color.green;
+        achievementButton.color = newColor;
+        PlayerPrefs.SetFloat("R", newColor.r);
+        PlayerPrefs.SetFloat("G", newColor.g);
+        PlayerPrefs.SetFloat("B", newColor.b);
+        PlayerPrefs.Save();
+    }
+
+    void LoadColor()
+    {
+        float r = PlayerPrefs.GetFloat("R", 1f);
+        float g = PlayerPrefs.GetFloat("G", 1f);
+        float b = PlayerPrefs.GetFloat("B", 1f);
+        achievementButton.color = new Color(r, g, b);
     }
 }
 
