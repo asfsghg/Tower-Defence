@@ -976,8 +976,8 @@ GameObject:
   - component: {fileID: 894890855}
   - component: {fileID: 894890854}
   - component: {fileID: 894890857}
-  - component: {fileID: 894890858}
   - component: {fileID: 894890859}
+  - component: {fileID: 894890860}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1052,13 +1052,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894890853}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.017692398, y: 0.917693, z: -0.39475924, w: 0.04112938}
-  m_LocalPosition: {x: 5.5, y: 24, z: -37.6}
+  m_LocalRotation: {x: -0.45532593, y: 0.06519588, z: -0.0019295994, w: -0.8879325}
+  m_LocalPosition: {x: 8.1, y: 30, z: -91.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 46.309, y: 172.559, z: -5.395}
+  m_LocalEulerAnglesHint: {x: 53.984, y: -371.181, z: -5.459}
 --- !u!114 &894890857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,23 +1103,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &894890858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894890853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9776b9e1e3070a44800d2d240370680, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 20
-  edgeScrollSize: 10
-  zoomSpeed: 10
-  minY: 10
-  maxY: 100
 --- !u!114 &894890859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,6 +1120,23 @@ MonoBehaviour:
   _cardSO:
   - {fileID: 11400000, guid: 3866eb22c29b2334081892689162b6f8, type: 2}
   _panelCard: []
+--- !u!114 &894890860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894890853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9776b9e1e3070a44800d2d240370680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+  edgeScrollSize: 10
+  zoomSpeed: 10
+  minY: 10
+  maxY: 100
 --- !u!4 &940710609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775298604753187919, guid: ef1d7f057e07b8448831cc871244e437,
