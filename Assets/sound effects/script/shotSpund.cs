@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class owerShoot : MonoBehaviour
+public class TurretSFX : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip shootSound;  // звук выстрела
