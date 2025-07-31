@@ -6,23 +6,32 @@ using UnityEngine.UI;
 public class achivement2 : MonoBehaviour
 {
     public Image achievementButton;
-    private void Start()
+    void Start()
     {
-        StartCoroutine(WaitAndDo());
+        LoadColor();
+        Invoke(nameof(ChangeColor), 5f);
     }
 
-    private IEnumerator WaitAndDo()
+    void ChangeColor()
     {
-        
-        yield return new WaitForSeconds(5f);
-        achievementButton.GetComponent<Image>().color = Color.green;
-
-
-
+        Color newColor = Color.green;
+        achievementButton.color = newColor;
+        PlayerPrefs.SetFloat("R", newColor.r);
+        PlayerPrefs.SetFloat("G", newColor.g);
+        PlayerPrefs.SetFloat("B", newColor.b);
+        PlayerPrefs.Save();
     }
-    
 
-    
+    void LoadColor()
+    {
+        float r = PlayerPrefs.GetFloat("R", 1f);
+        float g = PlayerPrefs.GetFloat("G", 1f);
+        float b = PlayerPrefs.GetFloat("B", 1f);
+        achievementButton.color = new Color(r, g, b);
+    }
+
+
+
 }
 
         

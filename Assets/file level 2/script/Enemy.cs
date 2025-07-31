@@ -23,5 +23,6 @@ public class Enemy : MonoBehaviour
         OnEnemyDeath?.Invoke();
         Destroy(gameObject);
     }
+   
 }
 
