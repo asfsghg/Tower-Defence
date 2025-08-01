@@ -26419,7 +26419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 1446902063}
-  moneyAmount: 2000
+  moneyAmount: 0
 --- !u!1 &1637487670
 GameObject:
   m_ObjectHideFlags: 0
