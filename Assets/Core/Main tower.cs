@@ -12,7 +12,7 @@ public class Maintower : MonoBehaviour
         if (_health <= 0)
         {
             gameOverPanel.SetActive(true);
-            Time.timeScale = 0;
+            Time.timeScale = 0.1f;
         }
     }
 }
