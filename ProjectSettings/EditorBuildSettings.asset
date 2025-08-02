@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Content/Global/Game Resources/Scenes/main.unity
     guid: 22b568b61474ea146a994961207d8301
   - enabled: 1
-    path: Assets/Content/Global/Game Resources/Scenes/asdqwf.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/Content/Global/Game Resources/Scenes/level-1.unity
     guid: 71df10ca91aa9ba4499cba2906266998
   - enabled: 1
