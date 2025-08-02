@@ -6,6 +6,7 @@ public class Maintower : MonoBehaviour
 {
     [SerializeField] public int _health;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private musicWL musicPlayer;
 
     void Update()
     {
@@ -13,6 +14,7 @@ public class Maintower : MonoBehaviour
         {
             gameOverPanel.SetActive(true);
             Time.timeScale = 0.1f;
+            musicPlayer.PlayVictoryMusic();
         }
     }
 }

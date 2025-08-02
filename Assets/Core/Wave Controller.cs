@@ -19,6 +19,8 @@ public class WaveController : MonoBehaviour
     [SerializeField] private GameObject Enemy3;
     [SerializeField] private GameObject Enemy4;
 
+    [SerializeField] private musicWL musicPlayer;
+
     private Coroutine currentWave;
 
     void Start()
@@ -79,6 +81,7 @@ public class WaveController : MonoBehaviour
         
         winPanel.SetActive(true);
         Time.timeScale = 0.1f;
+        musicPlayer.PlayVictoryMusic();
     }
 }
 

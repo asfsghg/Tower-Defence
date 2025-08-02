@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class BaseHealt : MonoBehaviour
 {
-    public int baseHealth = 1;
+    public int baseHealth = 100;
     public Slider healthSlider;
     private void Start()
     {

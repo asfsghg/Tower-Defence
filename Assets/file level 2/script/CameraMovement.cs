@@ -13,7 +13,6 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         Vector3 pos = transform.position;
-
        
         if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
             pos.z += moveSpeed * Time.deltaTime;

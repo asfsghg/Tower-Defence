@@ -19,7 +19,7 @@ public class SpawnEnemy : MonoBehaviour
         while (currentWave < waveCounts.Length)
         {
             int count = waveCounts[currentWave];
-            Debug.Log($"Волна {currentWave + 1} {count} объектов");
+            Debug.Log($"Волна {currentWave + 1} {count}");
 
             for (int i = 0; i < count; i++)
             {

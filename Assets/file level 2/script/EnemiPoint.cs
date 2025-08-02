@@ -26,7 +26,7 @@ public class EnemiPoint : MonoBehaviour
         if (other.gameObject.tag == "WayPoint")
         {
             Destroy(gameObject);
-
+            
         }
     }
 
