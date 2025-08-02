@@ -3,6 +3,16 @@ using UnityEngine;
 
 public class WaveController : MonoBehaviour
 {
+    [SerializeField] private GameObject winPanel;
+
+    [SerializeField] private int Wave1Time;
+    [SerializeField] private int Wave2Time;
+    [SerializeField] private int Wave3Time;
+    
+    [SerializeField] private int SpawnTime1;
+    [SerializeField] private int SpawnTime2;
+    [SerializeField] private int SpawnTime3;
+    
     [SerializeField] private Transform SpawnPrefab;
     [SerializeField] private GameObject Enemy1;
     [SerializeField] private GameObject Enemy2;
@@ -18,23 +28,19 @@ public class WaveController : MonoBehaviour
 
     IEnumerator StartWaves()
     {
-        // Волна 1
         currentWave = StartCoroutine(Wave1());
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(Wave1Time);
         StopCoroutine(currentWave);
-
-        // Волна 2
+        
         currentWave = StartCoroutine(Wave2());
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(Wave2Time);
         StopCoroutine(currentWave);
-
-        // Волна 3
+        
         currentWave = StartCoroutine(Wave3());
-        yield return new WaitForSeconds(50f);
+        yield return new WaitForSeconds(Wave3Time);
         StopCoroutine(currentWave);
-
-        // Волна 4 (один раз)
-        Wave4();
+        
+        currentWave = StartCoroutine(Wave4());
     }
 
     IEnumerator Wave1()
@@ -42,7 +48,7 @@ public class WaveController : MonoBehaviour
         while (true)
         {
             Instantiate(Enemy1, SpawnPrefab.position, Quaternion.identity);
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(SpawnTime1);
         }
     }
 
@@ -51,7 +57,7 @@ public class WaveController : MonoBehaviour
         while (true)
         {
             Instantiate(Enemy2, SpawnPrefab.position, Quaternion.identity);
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(SpawnTime2);
         }
     }
 
@@ -60,13 +66,19 @@ public class WaveController : MonoBehaviour
         while (true)
         {
             Instantiate(Enemy3, SpawnPrefab.position, Quaternion.identity);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(SpawnTime3);
         }
     }
 
-    private void Wave4()
+
+    IEnumerator Wave4()
     {
-        Instantiate(Enemy4, SpawnPrefab.position, Quaternion.identity);
+        GameObject enemy = Instantiate(Enemy4, SpawnPrefab.position, Quaternion.identity);
+
+        yield return new WaitUntil(() => enemy == null);
+        
+        winPanel.SetActive(true);
+        Time.timeScale = 0.1f;
     }
 }
 

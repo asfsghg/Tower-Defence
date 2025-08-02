@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Content/Global/Game Resources/Scenes/main.unity
     guid: 22b568b61474ea146a994961207d8301
   - enabled: 1
-    path: Assets/Technorobot/scene/gamelevel-MODEL.unity
-    guid: 444d572b6e06a2f45be5a1b089b9cc9b
-  - enabled: 1
     path: Assets/Content/Global/Game Resources/Scenes/asdqwf.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
@@ -19,8 +16,8 @@ EditorBuildSettings:
     guid: 71df10ca91aa9ba4499cba2906266998
   - enabled: 1
     path: Assets/Content/Global/Game Resources/Scenes/level-2.unity
-    guid: c0676fbbeeac96049ac151a181f7a9be
+    guid: ba05c9622d415e64baccfc4b6f51be7f
   - enabled: 1
     path: Assets/Content/Global/Game Resources/Scenes/level-3.unity
-    guid: d93384260850800419e13037755f7bf6
+    guid: b594b07097434cd419e03559650af390
   m_configObjects: {}

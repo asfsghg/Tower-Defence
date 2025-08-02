@@ -20,6 +20,12 @@ public class MenuManager : MonoBehaviour
 
     }
 
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+   
     public void ExitGame()
     {
         Debug.Log("Exit");
