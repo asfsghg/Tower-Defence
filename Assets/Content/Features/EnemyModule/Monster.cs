@@ -1,16 +1,20 @@
 using UnityEngine;
 using UnityEngine.AI;
-
+using TMPro;
 public class Monster : MonoBehaviour
 {
     [SerializeField] private int _Speed = 4;
     [SerializeField] private Transform[] targetPoints;
+    
+    
+    
 
     private NavMeshAgent agent;
     private int currentIndex = 0;
 
     void Start()
     {
+        FindObjectOfType<Maintower>().healthText.text = FindObjectOfType<Maintower>()._health.ToString();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = _Speed;
 
@@ -31,6 +35,8 @@ public class Monster : MonoBehaviour
             {
                 Destroy(gameObject);
                 FindObjectOfType<Maintower>()._health -= 10;
+                
+                FindObjectOfType<Maintower>().healthText.text = FindObjectOfType<Maintower>()._health.ToString();
             }
             else
             {

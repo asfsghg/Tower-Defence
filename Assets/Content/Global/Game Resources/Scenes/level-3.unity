@@ -14510,6 +14510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   gameOverPanel: {fileID: 1641659408}
+  musicPlayer: {fileID: 0}
 --- !u!1 &670324704
 GameObject:
   m_ObjectHideFlags: 0
@@ -35111,7 +35112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 408c17e4d15d44144a7d30c9c2cdd2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 0
 --- !u!4 &1669846674
 Transform:
   m_ObjectHideFlags: 0
@@ -35390,6 +35390,7 @@ GameObject:
   - component: {fileID: 1676381282}
   - component: {fileID: 1676381288}
   - component: {fileID: 1676381285}
+  - component: {fileID: 1676381289}
   - component: {fileID: 1676381286}
   - component: {fileID: 1676381287}
   m_Layer: 0
@@ -35529,7 +35530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a05809c34e12b4ea3b241dacca9e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 20
   scrollSpeed: 5
+  edgeScrollSize: 10
   minY: 10
   maxY: 80
 --- !u!114 &1676381287
@@ -35569,6 +35572,24 @@ MonoBehaviour:
   Enemy2: {fileID: 2143681665}
   Enemy3: {fileID: 767164586}
   Enemy4: {fileID: 244024536}
+  musicPlayer: {fileID: 0}
+--- !u!114 &1676381289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676381281}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9776b9e1e3070a44800d2d240370680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+  edgeScrollSize: 10
+  zoomSpeed: 10
+  minY: 10
+  maxY: 100
 --- !u!1 &1685133121
 GameObject:
   m_ObjectHideFlags: 0

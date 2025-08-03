@@ -63,7 +63,7 @@ public class ShopController : MonoBehaviour
                     if (hit.collider.tag == "Building")
                     {
                         Vector3 spawnPosition = hit.point;
-                        spawnPosition.y = 2.36f;
+                        spawnPosition.y = 1.9f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
                         _currentTurret = null;
                         _IsBuilding = false;
@@ -92,7 +92,7 @@ public class ShopController : MonoBehaviour
                     if (hit.collider.tag == "Farm")
                     {
                         Vector3 spawnPosition = hit.point;
-                        spawnPosition.y = 2.36f;
+                        spawnPosition.y = 1.9f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
                         _currentTurret = null;
                         _IsBuilding = false;
