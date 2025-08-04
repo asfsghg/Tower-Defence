@@ -16,6 +16,7 @@ public class ShopController : MonoBehaviour
     private MoneyController _moneyController;
     private bool _IsBuilding;
     [SerializeField] private ShopTurret[] _ShopTurrets;
+    private SoundClic _SoundClic;
 
     private void Awake()
     {
@@ -62,6 +63,7 @@ public class ShopController : MonoBehaviour
                 {
                     if (hit.collider.tag == "Building")
                     {
+                        //_SoundClic.PlayThisSoung();
                         Vector3 spawnPosition = hit.point;
                         spawnPosition.y = 1.9f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
@@ -91,6 +93,7 @@ public class ShopController : MonoBehaviour
                 {
                     if (hit.collider.tag == "Farm")
                     {
+                        //_SoundClic.PlayThisSoung();
                         Vector3 spawnPosition = hit.point;
                         spawnPosition.y = 1.9f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);

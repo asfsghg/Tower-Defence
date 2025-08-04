@@ -226,7 +226,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4563830100425558409}
   - component: {fileID: 1759763245732210569}
-  - component: {fileID: 660288765666152788}
   m_Layer: 0
   m_Name: Turret lvl3
   m_TagString: Untagged
@@ -261,7 +260,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 18ddf4504f7d8534e848e1a1e24d1a17, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -347,21 +346,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &660288765666152788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3593563509518646950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c0b0ca7578af7d4cbecaf69c4c6bfad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 1759763245732210569}
-  shootSound: {fileID: 8300000, guid: 528be076e18264e4ea407fae0f64787c, type: 3}
-  hitSound: {fileID: 8300000, guid: 84235bb59c7ef8b48ba2b75bc0ea1624, type: 3}
 --- !u!1 &5201994997235763909
 GameObject:
   m_ObjectHideFlags: 0

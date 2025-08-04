@@ -15,6 +15,9 @@ public class Electrickcontroller : MonoBehaviour
     [SerializeField] private float _bulletfrequency = 2f; // частота кулі
 
     private float shootTimer = 0f; // затримка кулі
+    
+    
+
 
     private void Awake()
     {
