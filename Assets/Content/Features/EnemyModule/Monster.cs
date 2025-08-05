@@ -37,6 +37,7 @@ public class Monster : MonoBehaviour
                 FindObjectOfType<Maintower>()._health -= 10;
                 
                 FindObjectOfType<Maintower>().healthText.text = FindObjectOfType<Maintower>()._health.ToString();
+                FindObjectOfType<Maintower>().textMaxHealth.value = FindObjectOfType<Maintower>()._health;
             }
             else
             {

@@ -55,27 +55,20 @@ public class ShopController : MonoBehaviour
         {
             if (_IsBuilding && _currentTurret != null)
             {
-
-
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
-                    if (hit.collider.tag == "Building")
+                    if (hit.collider.CompareTag("Building"))
                     {
-                        
-                        Vector3 spawnPosition = hit.point;
+                        Vector3 spawnPosition = hit.collider.transform.position;
                         spawnPosition.y = 1f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
                         _currentTurret = null;
                         _IsBuilding = false;
                         hit.collider.tag = "Untagged";
                     }
-
-
-
                 }
-
             }
         }
     }
@@ -86,30 +79,26 @@ public class ShopController : MonoBehaviour
         {
             if (_IsBuilding && _currentTurret != null)
             {
-                
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
-                    if (hit.collider.tag == "Farm")
+                    if (hit.collider.CompareTag("Farm"))
                     {
-                        //_SoundClic.PlayThisSoung();
-                        Vector3 spawnPosition = hit.point;
+                        Vector3 spawnPosition = hit.collider.transform.position;
                         spawnPosition.y = 1.9f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
                         _currentTurret = null;
                         _IsBuilding = false;
                         hit.collider.tag = "Untagged";
                     }
-                    
                 }
-            
             }
         }
-        
     }
 
-}
+    }
+
 
 
 

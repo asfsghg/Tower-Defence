@@ -121,9 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825509c7fb70bdc46a6fd5d4a6bd5107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 35
+  _damage: 20
   _destroyTime: 1
-  moneyAdd: 100
+  moneyAdd: 25
 --- !u!54 &507720142319618986
 Rigidbody:
   m_ObjectHideFlags: 0

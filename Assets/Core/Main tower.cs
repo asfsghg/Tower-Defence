@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,8 +12,14 @@ public class Maintower : MonoBehaviour
     [SerializeField] private musicWL musicPlayer;
     [SerializeField] public TextMeshProUGUI healthText;
     
+    [SerializeField] public Slider textMaxHealth;
 
     private bool _isGameOver = false;
+
+    private void Awake()
+    {
+       textMaxHealth.value = _health;
+    }
 
     void Update()
     {

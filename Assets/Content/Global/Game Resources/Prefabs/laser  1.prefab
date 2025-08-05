@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 50
   _destroyTime: 1
-  moneyAdd: 300
+  moneyAdd: 50
 --- !u!54 &1819487579879010273
 Rigidbody:
   m_ObjectHideFlags: 0

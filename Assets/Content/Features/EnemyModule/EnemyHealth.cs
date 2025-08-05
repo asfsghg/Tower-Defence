@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] Slider textHealth;
     [SerializeField] public int _Health = 100;
 
+
     private void Awake()
     {
         if (textHealth != null)
