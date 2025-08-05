@@ -7,16 +7,36 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
 
-   public void LoadSceneGame(int index)
-    {
-        SceneManager.LoadScene(index);
+    [SerializeField] public static int NextGame = 0;
 
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+   public void LoadSceneGame1()
+    {
+        SceneManager.LoadScene(1);
+
+
+    }
+    public void LoadSceneGame2()
+    {
+        if (NextGame >= 1)
+        {
+            SceneManager.LoadScene(2);
+
+        }
+    }
+    public void LoadSceneGame3()
+    {
+        if (NextGame >= 2)
+        {
+            SceneManager.LoadScene(3);
+
+        }
+
 
     }
 
     public void ReloadScene()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 

@@ -78,10 +78,11 @@ public class WaveController : MonoBehaviour
         GameObject enemy = Instantiate(Enemy4, SpawnPrefab.position, Quaternion.identity);
 
         yield return new WaitUntil(() => enemy == null);
-        
+        MenuManager.NextGame++;
         winPanel.SetActive(true);
         Time.timeScale = 0.1f;
         musicPlayer.PlayVictoryMusic();
+        
     }
 }
 

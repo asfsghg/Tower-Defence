@@ -63,9 +63,9 @@ public class ShopController : MonoBehaviour
                 {
                     if (hit.collider.tag == "Building")
                     {
-                        //_SoundClic.PlayThisSoung();
+                        
                         Vector3 spawnPosition = hit.point;
-                        spawnPosition.y = 1.9f;
+                        spawnPosition.y = 1f;
                         Instantiate(_currentTurret, spawnPosition, Quaternion.identity);
                         _currentTurret = null;
                         _IsBuilding = false;
